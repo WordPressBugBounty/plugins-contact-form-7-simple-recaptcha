@@ -65,7 +65,7 @@ function cf7sr_turnstile_shortcode( $atts ) {
 
     $cf7sr_id       = 'cf7sr-' . uniqid();
 
-    return '<div id="' . $cf7sr_id . '" class="cf7sr-g-turnstile" data-theme="' . esc_attr( $cf7sr_theme ) . '" data-language="'
+    return '<div id="' . esc_attr($cf7sr_id) . '" class="cf7sr-g-turnstile" data-theme="' . esc_attr( $cf7sr_theme ) . '" data-language="'
         . esc_attr( $cf7sr_ts_language ) . '" data-size="' . esc_attr( $cf7sr_ts_size ) . '" data-appearance="' . esc_attr( $cf7sr_ts_appearance ) . '" data-sitekey="' . esc_attr( $cf7sr_ts_key )
         . '"></div><span class="wpcf7-form-control-wrap cf7sr-turnstile" data-name="cf7sr-turnstile"><input type="hidden" name="cf7sr-turnstile" value="" class="wpcf7-form-control"></span>';
 }

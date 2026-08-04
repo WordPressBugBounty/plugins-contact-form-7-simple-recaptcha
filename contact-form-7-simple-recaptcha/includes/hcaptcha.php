@@ -64,7 +64,7 @@ function cf7sr_hcaptcha_shortcode( $atts ) {
 
     $cf7sr_id       = 'cf7sr-' . uniqid();
 
-    return '<div id="' . $cf7sr_id . '" class="cf7sr-g-hcaptcha" data-theme="' . esc_attr( $cf7sr_theme ) . '" data-size="' . esc_attr( $cf7sr_size ) . '" data-sitekey="' . esc_attr( $cf7sr_hc_key )
+    return '<div id="' . esc_attr($cf7sr_id) . '" class="cf7sr-g-hcaptcha" data-theme="' . esc_attr( $cf7sr_theme ) . '" data-size="' . esc_attr( $cf7sr_size ) . '" data-sitekey="' . esc_attr( $cf7sr_hc_key )
         . '"></div><span class="wpcf7-form-control-wrap cf7sr-hcaptcha" data-name="cf7sr-hcaptcha"><input type="hidden" name="cf7sr-hcaptcha" value="" class="wpcf7-form-control"></span>';
 }
 add_shortcode( 'cf7sr-hcaptcha', 'cf7sr_hcaptcha_shortcode' );

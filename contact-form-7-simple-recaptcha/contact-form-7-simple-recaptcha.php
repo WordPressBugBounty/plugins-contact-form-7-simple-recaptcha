@@ -1,8 +1,9 @@
 <?php
 /*
-Plugin Name: Contact Form 7 Captcha
+Plugin Name: LukasApps CAPTCHA tools for Contact Form 7
 Description: Add reCAPTCHA V2, hCAPTCHA or Cloudflare Turnstile CAPTCHA to Contact Form 7 using [cf7sr-recaptcha], [cf7sr-hcaptcha] or [cf7sr-turnstile] shortcode
-Version: 0.1.7
+Version: 0.1.8
+Requires at least: 6.2
 Author: 247wd
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'CF7SR_VERSION', '0.1.7' );
+define( 'CF7SR_VERSION', '0.1.8' );
 define( 'CF7SR_PLUGIN', __FILE__ );
 define( 'CF7SR_PLUGIN_BASENAME', plugin_basename( CF7SR_PLUGIN ) );
 define( 'CF7SR_PLUGIN_NAME', untrailingslashit( dirname( CF7SR_PLUGIN_BASENAME ) ) );
