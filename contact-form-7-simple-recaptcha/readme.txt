@@ -2,8 +2,8 @@
 Contributors: 247wd
 Tags: contact form 7, captcha, recaptcha, hcaptcha, cloudflare turnstile
 Requires at least: 6.2
-Tested up to: 7.0.2
-Stable tag: 0.1.8
+Tested up to: 7.1
+Stable tag: 0.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,9 @@ These services are only contacted when the corresponding CAPTCHA type is enabled
 3. Configure plugin from Admin => CF7 Captcha
 
 == Changelog ==
+
+= 0.1.9 =
+* Security fix: A vulnerability allowed an unauthenticated visitor to trigger execution of shortcode content when submitting a form. Reported responsibly by Jakub Herman via WPScan/Jetpack (Automattic). All users are strongly encouraged to update immediately.
 
 = 0.1.8 =
 * Fix: Updated "Requires at least" version to match plugin headers and readme.
